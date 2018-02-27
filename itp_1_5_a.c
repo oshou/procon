@@ -1,4 +1,6 @@
 /*
+ * ITP_1_5_A
+ *
  * input: The input consists of multiple datasets. Each dataset consists of two integers H and W separated by a single space.
  *        The input ends with two 0 (when both H and W are zero).
  * output: For each dataset, print the rectangle made of H × W '#'.

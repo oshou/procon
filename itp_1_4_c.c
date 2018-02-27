@@ -1,6 +1,11 @@
 /*
- * input: a op b
- * output: for each dataset, print the value line
+ * ITP_1_4_C
+ *
+ * input:
+ * a op b
+ *
+ * output:
+ * for each dataset, print the value line
  */
 #include <stdio.h>
 
