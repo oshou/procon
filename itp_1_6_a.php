@@ -1,7 +1,6 @@
 <?php
 
-fscanf(STDIN, '%d', $n);
+$n = (int)trim(fgets(STDIN));
 $line = trim(fgets(STDIN));
-$arr = explode(' ', $line);
-$arr = array_reverse($arr);
-echo implode(' ',$arr), PHP_EOL;
+$arr = explode(" ", $line);
+echo implode(" ", array_reverse($arr)), PHP_EOL;
