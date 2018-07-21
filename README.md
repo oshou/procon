@@ -1,1 +1,1 @@
-#aoj
+#Competitive programming
