@@ -1,2 +1,6 @@
-a = gets.chomp.split(" ").map(&:to_i)
-puts a.sort.join(" ")
+a,b,c = gets.split(" ").map{|i| i.to_i}
+if a < b && b < c
+  puts "Yes"
+else
+  puts "No"
+end

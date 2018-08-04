@@ -1,8 +1,8 @@
-#include <stdio.h>
-int main()
-{
-    int x,y;
-    scanf("%d %d",&x,&y);
-    printf("%d %d\n",x*y,2*x+2*y);
+#include<stdio.h>
+
+int main(){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d %d\n",a*b,a*2+b*2);
     return 0;
 }

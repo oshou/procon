@@ -1,6 +1,8 @@
 <?php
-fscanf(STDIN,'%d',$S);
-$h = $S / (60 * 60);
-$m = $S % (60 * 60) / 60;
-$s = $S % (60 * 60) % 60;
-echo $h,":",$m,":",$s;
+
+$S = fgets(STDIN);
+$h = floor($S / 3600);
+$m = floor(($S % 3600) / 60);
+$s = ($S % 3600) % 60;
+
+echo $h.':'.$m.':'.$s.PHP_EOL;

@@ -1,2 +1,2 @@
-a,b = gets.chomp.split(" ").map(&:to_i)
-print("#{a*b} #{2*(a+b)}\n")
+a,b = gets.split(" ")
+print a.to_i * b.to_i," ",2*(a.to_i + b.to_i),"\n"

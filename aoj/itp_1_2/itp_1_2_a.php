@@ -1,9 +1,9 @@
 <?php
-fscanf(STDIN, "%d %d", $a, $b);
-if ($a < $b){
-    echo "a < b";
-} else ($a > $b){
-    echo "a > b";
-} else {
-    echo "a = b";
-}
+
+list($a,$b) = explode(" ",trim(fgets(STDIN)));
+if ($a > $b)
+    echo "a > b".PHP_EOL;
+elseif ($a < $b)
+    echo "a < b".PHP_EOL;
+else
+    echo "a == b".PHP_EOL;

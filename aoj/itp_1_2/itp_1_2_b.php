@@ -1,6 +1,8 @@
 <?php
 
-fscanf(STDIN,"%d %d %d",$a, $b, $c)
-echo $a < $b && $b < $c ? "Yes" : "No";
-
-echo PHP_EOL;
+list($a,$b,$c) = explode(" ",trim(fgets(STDIN)));
+if ($a < $b && $b < $c){
+    echo "Yes".PHP_EOL;
+} else {
+    echo "No".PHP_EOL;
+}
