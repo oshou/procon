@@ -1,4 +1,5 @@
 import math
 
 a, b = map(int, input().split())
-print(math.ceil((a+b)/2))
+ans = math.ceil((a+b)/2)
+print(ans)

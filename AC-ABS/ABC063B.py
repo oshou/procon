@@ -1,5 +1,5 @@
 S = str(input())
-if sorted(list(S)) == sorted(set(S)):
+if len(list(S)) == len(set(S)):
     print("yes")
 else:
     print("no")
