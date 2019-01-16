@@ -13,4 +13,5 @@ func main() {
 			count++
 		}
 	}
+	fmt.Prinln(count)
 }
