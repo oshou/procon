@@ -1,6 +1,13 @@
 package main
 
+const TEST = 100
+
 func main() {
-	var ui uint32 = 4294967296
-	ui = ui + 1
+	a := 3
+	b := 2
+	printf("%d\n", a+b)
+	printf("%d\n", a-b)
+	printf("%d\n", a*b)
+	printf("%d\n", a/b)
+	printf("%d\n", a%b)
 }

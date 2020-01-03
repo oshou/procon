@@ -1,3 +1,11 @@
-*.out
+
+# for PHP
 vendor
-composer.*
+composer.lock
+
+# for ruby
+Gemfile.lock
+
+# for Go
+go.sum
+*.out

@@ -1,0 +1,13 @@
+{
+    "name": "oshou/procon",
+    "authors": [
+        {
+            "name": "oshou",
+            "email": "adf1985adf@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
