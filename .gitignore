@@ -1,1 +1,10 @@
-*.out
+
+# for PHP
+vendor
+composer.lock
+
+# for ruby
+Gemfile.lock
+
+# for Go
+go.sum
