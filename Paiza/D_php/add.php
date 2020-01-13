@@ -1,6 +1,6 @@
 <?php
 
-function add(string $a, $b): string
+function add(int $a, $b): int
 {
     return $a + $b;
 }
