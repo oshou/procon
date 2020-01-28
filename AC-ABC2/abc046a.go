@@ -1,38 +1,13 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"strings"
-)
-
-func contain(nums []int, n int) bool {
-	for _, num := range nums {
-		if num == n {
-			return true
-		}
-	}
-	return false
-}
+import "fmt"
 
 func main() {
-	// input
-	//var a, b, c int
-	//fmt.Scanf("%d %d %d", &a, &b, &c)
-	//nums := []int{a, b, c}
-	sc := bufio.NewScanner(os.Stdin)
-	sc.Scan()
-	nums := strings.Split(sc.Text(), " ")
-
-	// create unique-num-slice
-	uniques := []int{}
-	for _, num := range nums {
-		if !contain(uniques, num) {
-			uniques = append(uniques, num)
-		}
-	}
-
-	// count
+	var a, b, c int
+	fmt.Scanf("%d %d %d", &a, &b, &c)
+	uniques := map[int]bool{}
+	uniques[a] = true
+	uniques[b] = true
+	uniques[c] = true
 	fmt.Println(len(uniques))
 }
