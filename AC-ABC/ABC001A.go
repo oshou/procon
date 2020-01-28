@@ -6,6 +6,5 @@ func main() {
 	var h1, h2 int
 	fmt.Scan(&h1)
 	fmt.Scan(&h2)
-
 	fmt.Println(h1 - h2)
 }

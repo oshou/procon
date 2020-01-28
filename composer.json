@@ -13,5 +13,10 @@
     "phpstan/phpstan": "^0.12.3",
     "vlucas/phpdotenv": "^4.1",
     "monolog/monolog": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Procon\\POH\\": "POH/"
+    }
   }
 }
