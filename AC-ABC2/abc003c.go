@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main(){
+func main() {
 	// input
 	var n, k int
 	fmt.Scan(&n, &k)
