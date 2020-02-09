@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"math"
 	"os"
 	"strconv"
@@ -22,18 +21,13 @@ func readInt() int {
 }
 
 func main() {
-	var k, s int
-	k, s = readInt(), readInt()
-	cnt := 0
-	if k > s {
-		k = s
-	}
-	for x := 0; x <= k; x++ {
-		for y := 0; y <= k; y++ {
-			if z := s - (x + y); 0 <= z && z <= k {
-				cnt++
-			}
-		}
-	}
-	fmt.Println(cnt)
+	a, b, c := readInt(), readInt(), readInt()
+	(a*n)%b == c
+
 }
+
+a-b
+
+2*n%5 == 1
+
+99*n%100 == 97

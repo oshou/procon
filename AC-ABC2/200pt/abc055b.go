@@ -22,18 +22,10 @@ func readInt() int {
 }
 
 func main() {
-	var k, s int
-	k, s = readInt(), readInt()
-	cnt := 0
-	if k > s {
-		k = s
+	n := readInt()
+	ans := 1
+	for i := 2; i <= n; i++ {
+		ans = ans * i % 1000000007
 	}
-	for x := 0; x <= k; x++ {
-		for y := 0; y <= k; y++ {
-			if z := s - (x + y); 0 <= z && z <= k {
-				cnt++
-			}
-		}
-	}
-	fmt.Println(cnt)
+	fmt.Println(ans)
 }

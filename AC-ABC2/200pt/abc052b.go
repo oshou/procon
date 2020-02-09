@@ -15,6 +15,11 @@ func init() {
 	sc.Buffer([]byte{}, math.MaxInt64)
 }
 
+func readString() string {
+	sc.Scan()
+	return sc.Text()
+}
+
 func readInt() int {
 	sc.Scan()
 	r, _ := strconv.Atoi(sc.Text())
@@ -22,18 +27,19 @@ func readInt() int {
 }
 
 func main() {
-	var k, s int
-	k, s = readInt(), readInt()
-	cnt := 0
-	if k > s {
-		k = s
-	}
-	for x := 0; x <= k; x++ {
-		for y := 0; y <= k; y++ {
-			if z := s - (x + y); 0 <= z && z <= k {
-				cnt++
+	n := readInt()
+	s := readString()
+	cnt, max := 0, 0
+	for i := 0; i < n; i++ {
+		switch string(s[i]) {
+		case "I":
+			cnt++
+			if max < cnt {
+				max = cnt
 			}
+		case "D":
+			cnt--
 		}
 	}
-	fmt.Println(cnt)
+	fmt.Println(max)
 }
