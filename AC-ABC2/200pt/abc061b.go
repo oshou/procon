@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"math"
 	"os"
 	"strconv"
@@ -21,13 +22,16 @@ func readInt() int {
 }
 
 func main() {
-	a, b, c := readInt(), readInt(), readInt()
-	(a*n)%b == c
-
+	n, m := readInt(), readInt()
+	a := make([]int, m)
+	b := make([]int, m)
+	hash := make([]int, n)
+	for i := 0; i < m; i++ {
+		a[i], b[i] = readInt(), readInt()
+		hash[a[i]-1]++
+		hash[b[i]-1]++
+	}
+	for _, v := range hash {
+		fmt.Println(v)
+	}
 }
-
-a-b
-
-2*n%5 == 1
-
-99*n%100 == 97
