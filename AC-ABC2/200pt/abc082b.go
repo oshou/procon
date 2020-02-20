@@ -51,24 +51,22 @@ func main() {
 	t := readString()
 	sd := SortString(s)
 	td := SortReverseString(t)
-	fmt.Println(sd)
-	fmt.Println(td)
 
-	ans := "Yes"
-	if len(sd) > len(td) {
-		ans = "No"
-	}
 	for i := 0; i < len(sd); i++ {
-		fmt.Println("sdi", sd[i])
-		fmt.Println("tdi", td[i])
 		switch {
 		case sd[i] < td[i]:
-
-		}
-		if sd[i] > td[i] {
-			ans = "No"
-			break
+			fmt.Println("Yes")
+			os.Exit(0)
+		case sd[i] > td[i]:
+			fmt.Println("No")
+			os.Exit(0)
+		case sd[i] == td[i]:
+			continue
 		}
 	}
-	fmt.Println(ans)
+	if len(sd) < len(td) {
+		fmt.Println("Yes")
+		os.Exit(0)
+	}
+	fmt.Println("No")
 }
