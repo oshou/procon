@@ -1,4 +1,3 @@
 <?php
-
-$n = intval(fgets(STDIN));
-printf("%d\n", $n * 12);
+$n = intval(trim(fgets(STDIN)));
+echo ($n * 12) . PHP_EOL;

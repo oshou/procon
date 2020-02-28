@@ -1,10 +1,10 @@
 <?php
 $s = trim(fgets(STDIN));
 switch ($s) {
-    case "candy":
     case "chocolate":
-        echo "Thanks!\n";
+    case "candy":
+        echo "Thanks!" . PHP_EOL;
         break;
     default:
-        echo "No!\n";
+        echo "No!" . PHP_EOL;
 }

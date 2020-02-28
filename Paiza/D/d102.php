@@ -1,3 +1,3 @@
 <?php
-$n = intval(fgets(STDIN));
-printf("%d\n", (100 + 10 * $n));
+$n = intval(trim(fgets(STDIN)));
+echo (100 + $n * 10) . PHP_EOL;

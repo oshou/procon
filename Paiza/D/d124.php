@@ -1,4 +1,3 @@
 <?php
-
-$t = intval(fgets(STDIN));
-printf("%d\n", ceil($t / 24));
+$h = intval(fgets(STDIN));
+echo intval(ceil($h / 24)) . PHP_EOL;

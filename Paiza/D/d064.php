@@ -1,4 +1,3 @@
 <?php
-
 $s = trim(fgets(STDIN));
-echo str_replace("False", "True", $s) . "\n";
+echo preg_replace('/False/', 'True', $s) . PHP_EOL;

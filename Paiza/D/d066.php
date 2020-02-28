@@ -1,7 +1,8 @@
 <?php
 fscanf(STDIN, "%d %d", $m, $n);
-if ($n >= $m) {
-    printf("%d\n", $n - $m);
+$power = $n - $m;
+if ($power < 0) {
+    echo "No" . PHP_EOL;
 } else {
-    print("No\n");
+    echo $power . PHP_EOL;
 }

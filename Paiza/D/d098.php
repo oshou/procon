@@ -1,3 +1,3 @@
 <?php
 fscanf(STDIN, "%d %d", $a, $b);
-printf("%d\n", $a * $b);
+echo $a * $b . PHP_EOL;

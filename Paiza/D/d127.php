@@ -1,8 +1,8 @@
 <?php
 $s = trim(fgets(STDIN));
-$numString = substr($s, 1);
-if ($numString === str_repeat($numString[0], strlen($numString))) {
-    print("Yes\n");
+$sub = substr($s, 1, strlen($s) - 1);
+if ($sub === str_repeat($sub[0], strlen($sub))) {
+    echo "Yes" . PHP_EOL;
 } else {
-    print("No\n");
+    echo "No" . PHP_EOL;
 }

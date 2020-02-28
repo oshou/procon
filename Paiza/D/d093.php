@@ -1,9 +1,7 @@
 <?php
-
-$num = (string) intval(fgets(STDIN));
-$same_num = str_repeat($num[0], strlen($num));
-if ($num == $same_num) {
-    printf("%d\n", $num);
+$s = trim(fgets(STDIN));
+if ($s === str_repeat($s[0], strlen($s))) {
+    echo $s . PHP_EOL;
 } else {
-    print("No\n");
+    echo "No" . PHP_EOL;
 }

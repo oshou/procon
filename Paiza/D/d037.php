@@ -1,6 +1,8 @@
 <?php
-
-$m = intval(fgets(STDIN));
-$n = intval(fgets(STDIN));
-
-echo ceil($n / $m) . "\n";
+$m = intval(trim(fgets(STDIN)));
+$n = intval(trim(fgets(STDIN)));
+if ($n === 0) {
+    exit;
+} else {
+    echo intval(ceil($n / $m)) . PHP_EOL;
+}

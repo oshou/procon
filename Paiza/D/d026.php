@@ -1,10 +1,13 @@
 <?php
+$arr = [];
+for ($i = 0; $i < 7; $i++) {
+    $arr[] = trim(fgets(STDIN));
+}
 
 $cnt = 0;
-for ($i = 0; $i < 7; $i++) {
-    $s = trim(fgets(STDIN));
-    if ($s !== "yes") {
+foreach ($arr as $value) {
+    if ($value === "no") {
         $cnt++;
     }
 }
-echo $cnt . "\n";
+echo $cnt . PHP_EOL;

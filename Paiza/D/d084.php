@@ -1,5 +1,5 @@
 <?php
-$map = [
+$months = [
     1 => "January",
     2 => "February",
     3 => "March",
@@ -11,7 +11,7 @@ $map = [
     9 => "September",
     10 => "October",
     11 => "November",
-    12 => "December"
+    12 => "December",
 ];
-$m = intval(fgets(STDIN));
-printf("%s\n", $map[$m]);
+$m = intval(trim(fgets(STDIN)));
+echo $months[$m] . PHP_EOL;

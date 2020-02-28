@@ -1,13 +1,11 @@
 <?php
-
-fscanf(STDIN, "%d %d %d", $a, $b, $R);
+fscanf(STDIN, "%d %d %d", $a, $b, $r);
 $n = intval(fgets(STDIN));
+$x = [];
 for ($i = 0; $i < $n; $i++) {
-    fscanf(STDIN, "%d %d", $x, $y);
-    $judge = ($x - $a) ** 2 + ($y - $b) ** 2;
-    if ($judge >= $R ** 2) {
-        echo "silent\n";
-    } else {
-        echo "noisy\n";
-    }
+    $x[$i] = explode(" ", trim(fgets(STDIN)));
+    $d = ((int) $x[$i][0] - $a) ** 2 + ((int) $x[$i][1] - $b) ** 2;
+    $area = $r ** 2;
+    echo ($d > $area) ? "silent" : "noisy";
+    echo PHP_EOL;
 }

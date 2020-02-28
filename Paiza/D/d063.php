@@ -1,14 +1,11 @@
 <?php
-
 $arr = explode(" ", trim(fgets(STDIN)));
-sort($arr);
-
-$n = trim(fgets(STDIN));
+$a = intval(trim(fgets(STDIN)));
+$rank = count($arr) + 1;
 for ($i = 0; $i < count($arr); $i++) {
-    if ($arr[$i] <= $n) {
-        continue;
+    if ($a < $arr[$i]) {
+        $rank = $i + 1;
+        break;
     }
-    printf("%d\n", $i + 1);
-    exit;
 }
-printf("%d\n", 6);
+echo $rank . PHP_EOL;

@@ -1,11 +1,9 @@
 <?php
 $s = trim(fgets(STDIN));
-$str = "";
-for ($i = 0; $i < strlen($s); $i++) {
-    if (is_numeric($s[$i])) {
-        $str .= $s[$i];
-    } else {
-        break;
+$ans = "";
+foreach (str_split($s) as $c) {
+    if (is_numeric($c)) {
+        $ans .= $c;
     }
 }
-printf("%s\n", (int) $str);
+echo $ans . PHP_EOL;

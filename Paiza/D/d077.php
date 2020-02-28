@@ -1,8 +1,9 @@
 <?php
 fscanf(STDIN, "%d %d", $a, $b);
-$m = $a * $b;
-if ($m >= 10000) {
-    print("NG\n");
+$multiple = $a * $b;
+
+if ($a <= 9999) {
+    echo $multiple . PHP_EOL;
 } else {
-    printf("%d\n", $m);
+    echo "NG" . PHP_EOL;
 }

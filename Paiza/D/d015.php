@@ -1,6 +1,5 @@
 <?php
-
-$n = intval(fgets(STDIN));
-for ($i = $n; $i > 0; $i--) {
-    echo $i . "\n";
+$n = intval(trim(fgets(STDIN)));
+for ($i = $n; $i >= 1; $i--) {
+    echo $i . PHP_EOL;
 }

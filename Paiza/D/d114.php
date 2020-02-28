@@ -1,3 +1,3 @@
 <?php
 fscanf(STDIN, "%d %d", $a, $b);
-printf("%d\n", $b * (1 + $a / 100));
+printf("%d\n", floor($b * (1 + $a / 100)));

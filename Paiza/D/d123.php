@@ -1,7 +1,6 @@
 <?php
-$x = intval(fgets(STDIN));
-if ($x < 10000) {
-    printf("%d\n", $x + 10000);
-} else {
-    printf("%d\n", $x);
+$price = intval(fgets(STDIN));
+if ($price < 10000) {
+    $price += 10000;
 }
+echo $price . PHP_EOL;

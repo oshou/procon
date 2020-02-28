@@ -1,5 +1,4 @@
 <?php
-
 $arr = explode(" ", trim(fgets(STDIN)));
 $cnt = 0;
 foreach ($arr as $ele) {
@@ -8,7 +7,7 @@ foreach ($arr as $ele) {
     }
 }
 if ($cnt >= 5) {
-    echo "OK\n";
+    echo "OK" . PHP_EOL;
 } else {
-    echo "NG\n";
+    echo "NG" . PHP_EOL;
 }

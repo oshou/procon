@@ -1,9 +1,4 @@
 <?php
-
-$n = intval(fgets(STDIN));
-if ($n % 2 === 0) {
-    echo "even";
-} else {
-    echo "odd";
-}
+$n = intval(trim(fgets(STDIN)));
+echo ($n % 2 == 0) ? "even" : "odd";
 echo PHP_EOL;

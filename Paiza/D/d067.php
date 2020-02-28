@@ -1,8 +1,7 @@
 <?php
-
-$n = intval(fgets(STDIN));
-if ($n % 2 === 0) {
-    printf("OFF\n");
+$n = intval(trim(fgets(STDIN)));
+if ($n % 2 == 0) {
+    echo "OFF" . PHP_EOL;
 } else {
-    printf("ON\n");
+    echo "ON" . PHP_EOL;
 }

@@ -1,9 +1,8 @@
 <?php
-
-$ng_word = trim(fgets(STDIN));
-$word = trim(fgets(STDIN));
-if (!strpos($word, $ng_word)) {
-    printf("%s\n", $word);
+$ng = trim(fgets(STDIN));
+$text = trim(fgets(STDIN));
+if (substr_count($text, $ng) === 0) {
+    echo $text . PHP_EOL;
 } else {
-    print("NG\n");
+    echo "NG" . PHP_EOL;
 }

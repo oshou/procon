@@ -1,3 +1,3 @@
 <?php
-$n = intval(fgets(STDIN));
-printf("%d\n", $n / 180 + 2);
+$d = intval(trim(fgets(STDIN)));
+echo (($d / 180) + 2) . PHP_EOL;

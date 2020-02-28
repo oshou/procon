@@ -1,11 +1,12 @@
 <?php
 $arr = explode(" ", trim(fgets(STDIN)));
 $sum = 0;
-for ($i = 0; $i < count($arr); $i++) {
-    if ($arr[$i] > 5) {
+foreach ($arr as $ele) {
+    $ele = intval($ele);
+    if ($ele >= 5) {
         $sum += 5;
     } else {
-        $sum += $arr[$i];
+        $sum += $ele;
     }
 }
-echo $sum . "\n";
+echo $sum . PHP_EOL;

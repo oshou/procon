@@ -1,8 +1,3 @@
 <?php
-
-$n = intval(fgets(STDIN));
-$sum = 0;
-for ($i = 1; $i <= $n; $i++) {
-    $sum += $i;
-}
-echo $sum . "\n";
+$n = intval(trim(fgets(STDIN)));
+echo (($n * ($n + 1)) / 2) . PHP_EOL;

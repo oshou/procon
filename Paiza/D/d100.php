@@ -1,13 +1,9 @@
 <?php
 $s = trim(fgets(STDIN));
-$underscore = substr_count($s, "_");
-$hyphen = substr_count($s, "-");
-
-if ($underscore >= $hyphen) {
-    $fromOperator = "-";
-    $toOperator = "_";
+$cnt_underscore = substr_count($s, "_");
+$cnt_hyphen = substr_count($s, "-");
+if ($cnt_hyphen > $cnt_underscore) {
+    echo str_replace("_", "-", $s) . PHP_EOL;
 } else {
-    $fromOperator = "_";
-    $toOperator = "-";
+    echo str_replace("-", "_", $s) . PHP_EOL;
 }
-printf("%s\n", str_replace($fromOperator, $toOperator, $s));

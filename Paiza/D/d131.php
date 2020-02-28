@@ -1,11 +1,12 @@
 <?php
-$s = trim(fgets(STDIN));
 $map = [
     0 => "C",
     1 => "A",
     2 => "B",
 ];
+$s = trim(fgets(STDIN));
+$txt = "";
 for ($i = 0; $i < strlen($s); $i++) {
-    printf("%s", $map[$s[$i]]);
+    $txt .= $map[$s[$i]];
 }
-print("\n");
+echo $txt . PHP_EOL;

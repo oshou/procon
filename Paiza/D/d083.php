@@ -1,7 +1,7 @@
 <?php
 fscanf(STDIN, "%d %d", $n, $m);
 if ($n + $m < 16) {
-    print("HIT\n");
+    echo "HIT" . PHP_EOL;
 } else {
-    print("STAND\n");
+    echo "STAND" . PHP_EOL;
 }

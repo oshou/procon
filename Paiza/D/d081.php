@@ -1,4 +1,4 @@
 <?php
-$n = intval(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 fscanf(STDIN, "%d %d", $h, $w);
-printf("%d\n", ($h * $w) % $n);
+echo (($h * $w) % $n) . PHP_EOL;

@@ -1,4 +1,4 @@
 <?php
-$n = intval(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 $s = trim(fgets(STDIN));
-printf("%s\n", str_repeat($s, $n));
+echo str_repeat($s, $n) . PHP_EOL;

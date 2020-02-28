@@ -1,9 +1,8 @@
 <?php
-
-$n = intval(fgets(STDIN));
-$ans = 21 % $n;
-if ($ans === 0) {
-    echo $n . "\n";
+$n = intval(trim(fgets(STDIN)));
+$mod = 21 % $n;
+if ($mod === 0) {
+    echo $n . PHP_EOL;
 } else {
-    echo $ans;
+    echo $mod . PHP_EOL;
 }

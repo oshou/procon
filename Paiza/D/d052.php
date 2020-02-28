@@ -1,8 +1,7 @@
 <?php
-
-$n = intval(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 $sum = 0;
 for ($i = 1; $i <= $n; $i++) {
     $sum += $i;
 }
-echo $sum . "\n";
+echo $sum . PHP_EOL;

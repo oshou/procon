@@ -1,6 +1,6 @@
 <?php
-$arr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
-fscanf(STDIN, "%d %d %d", $a, $b, $c);
-printf("%s\n", join("", array_slice($arr, 0, $a)));
-printf("%s\n", join("", array_slice($arr, $a, $b)));
-printf("%s\n", join("", array_slice($arr, $a + $b, $c)));
+$str = "ABCDEFGHIJ";
+fscanf(STDIN, "%d %d %d", $s1, $s2, $s3);
+echo substr($str, 0, $s1) . PHP_EOL;
+echo substr($str, $s1, $s2) . PHP_EOL;
+echo substr($str, $s1 + $s2, $s3) . PHP_EOL;

@@ -1,5 +1,3 @@
 <?php
-
-$n = intval(fgets(STDIN));
-$s = (string) $n;
-echo strlen($s) . PHP_EOL;
+$n = trim(fgets(STDIN));
+echo strlen($n) . PHP_EOL;

@@ -1,4 +1,4 @@
 <?php
-$n = trim(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 $arr = explode(" ", trim(fgets(STDIN)));
-printf("%s\n", $arr[$n - 1]);
+echo $arr[$n - 1] . PHP_EOL;

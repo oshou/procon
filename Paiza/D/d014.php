@@ -1,4 +1,3 @@
 <?php
-
-$s = fgets(STDIN);
+$s = trim(fgets(STDIN));
 echo strtoupper($s) . PHP_EOL;

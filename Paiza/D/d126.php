@@ -1,3 +1,3 @@
 <?php
 fscanf(STDIN, "%d %d %d", $c, $t, $a);
-printf("%d\n", $c + $t + $a);
+echo ($c + $t + $a) . PHP_EOL;

@@ -1,10 +1,12 @@
 <?php
-
 $s = trim(fgets(STDIN));
-if ($s[0] === "2") {
-    print("ok\n");
-} elseif ($s[0] === "4") {
-    print("error\n");
-} else {
-    print("unknown\n");
+$ans = "unknown";
+switch ($s[0]) {
+    case "2":
+        $ans = "OK";
+        break;
+    case "4":
+        $ans = "error";
+        break;
 }
+echo $ans . PHP_EOL;

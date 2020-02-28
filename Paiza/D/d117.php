@@ -1,4 +1,4 @@
 <?php
 $n = intval(fgets(STDIN));
-$arr = explode(" ", fgets(STDIN));
-printf("%d\n", array_sum($arr));
+$arr = explode(" ", trim(fgets(STDIN)));
+echo array_sum($arr) . PHP_EOL;

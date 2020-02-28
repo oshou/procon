@@ -1,4 +1,4 @@
 <?php
-$arr = explode(" ", trim(fgets(STDIN)));
-$sumString = (string) array_sum($arr);
-printf("%s\n", $sumString[-1]);
+$nums = explode(" ", trim(fgets(STDIN)));
+$avg = (string) array_sum($nums);
+echo $avg[-1] . PHP_EOL;

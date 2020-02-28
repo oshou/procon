@@ -1,4 +1,4 @@
 <?php
-$n = intval(fgets(STDIN));
-$m = intval(fgets(STDIN));
-printf("%d\n", $n / $m);
+$n = intval(trim(fgets(STDIN)));
+$m = intval(trim(fgets(STDIN)));
+echo intval($n / $m) . PHP_EOL;

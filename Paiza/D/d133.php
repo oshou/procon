@@ -1,6 +1,5 @@
 <?php
-$n = intval(fgets(STDIN));
-$a = intval(fgets(STDIN));
-$b = intval(fgets(STDIN));
-$unit = floor($n / $a);
-printf("%d\n", ($b - $a) * $unit);
+$x = intval(trim(fgets(STDIN)));
+$a = intval(trim(fgets(STDIN)));
+$b = intval(trim(fgets(STDIN)));
+echo intval($x / $a) * ($b - $a) . PHP_EOL;

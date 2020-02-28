@@ -1,4 +1,3 @@
 <?php
-
-$n = intval(fgets(STDIN));
-echo (7 - $n) . "\n";
+$n = intval(trim(fgets(STDIN)));
+echo (7 - $n) . PHP_EOL;

@@ -1,6 +1,4 @@
 <?php
-
-$n = intval(fgets(STDIN));
 $map = [
     1 => "E",
     2 => "D",
@@ -8,4 +6,5 @@ $map = [
     4 => "B",
     5 => "A",
 ];
-echo $map[$n] . "\n";
+$n = intval(trim(fgets(STDIN)));
+echo $map[$n] . PHP_EOL;

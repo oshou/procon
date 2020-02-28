@@ -1,6 +1,4 @@
 <?php
-
-const ALFABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-$s = trim(fgets(STDIN));
-
-echo strpos(ALFABET, $s) + 1 . PHP_EOL;
+const ALFABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZA";
+$c = trim(fgets(STDIN));
+echo (strpos(ALFABET, $c) + 1) . PHP_EOL;

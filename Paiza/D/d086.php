@@ -1,3 +1,3 @@
 <?php
-$min = intval(fgets(STDIN));
-printf("%d\n", $min * 5);
+$l = intval(trim(fgets(STDIN)));
+echo (5 * $l) . PHP_EOL;

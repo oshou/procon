@@ -1,8 +1,8 @@
 <?php
 $arr = [1, 2, 3, 4, 5];
 for ($i = 0; $i < 4; $i++) {
-    $num = intval(fgets(STDIN));
-    $index = array_search($num, $arr);
-    array_splice($arr, $index, 1);
+    $n = intval(trim(fgets(STDIN)));
+    $idx = array_search($n, $arr);
+    unset($arr[$idx]);
 }
-printf("%d\n", $arr[0]);
+echo array_values($arr)[0] . PHP_EOL;

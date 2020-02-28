@@ -1,3 +1,3 @@
 <?php
 $s = trim(fgets(STDIN));
-printf("%d\n", substr_count($s, "y"));
+echo substr_count($s, "y") . PHP_EOL;

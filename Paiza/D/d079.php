@@ -1,8 +1,7 @@
 <?php
-$s = fgets(STDIN);
-$same_str = str_repeat($s[0], strlen($s));
-if ($s === $same_str) {
-    print("OK\n");
+$s = trim(fgets(STDIN));
+if (strlen($s) == substr_count($s, $s[0])) {
+    echo "NG" . PHP_EOL;
 } else {
-    print("NG\n");
+    echo "OK" . PHP_EOL;
 }

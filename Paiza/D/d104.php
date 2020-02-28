@@ -1,8 +1,7 @@
 <?php
-
-$n = intval(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 if ($n < 10) {
-    printf("%d\n", 1000);
+    echo 1000 . PHP_EOL;
 } else {
-    printf("%d\n", 150 * $n);
+    echo ($n * 150) . PHP_EOL;
 }

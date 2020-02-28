@@ -1,4 +1,3 @@
 <?php
-
 fscanf(STDIN, "%d %d", $a, $b);
-echo $b - $a . PHP_EOL;
+echo ($b - $a) . PHP_EOL;

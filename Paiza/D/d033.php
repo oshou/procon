@@ -1,5 +1,3 @@
 <?php
-fscanf(STDIN, "%s %s", $first, $last);
-$InitialF = strtoupper($first[0]);
-$InitialL = strtoupper($last[0]);
-echo $InitialF . "." . $InitialL . "\n";
+fscanf(STDIN, "%s %s", $s, $t);
+printf("%s.%s\n", $s[0], $t[0]);

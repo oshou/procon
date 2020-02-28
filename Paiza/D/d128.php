@@ -1,7 +1,8 @@
 <?php
 $n = intval(fgets(STDIN));
-$arr = explode(" ", trim(fgets(STDIN)));
-foreach ($arr as $ele) {
-    printf("%s", $ele[0]);
+$words = explode(" ", trim(fgets(STDIN)));
+$str = "";
+foreach ($words as $word) {
+    $str .= $word[0];
 }
-print("\n");
+echo $str . PHP_EOL;

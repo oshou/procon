@@ -1,8 +1,11 @@
 <?php
 $s = trim(fgets(STDIN));
 $n = intval(fgets(STDIN));
-if ($s == "S") {
-    printf("%d\n", (1925 + $n));
-} else {
-    printf("%d\n", (1988 + $n));
+switch ($s) {
+    case "S":
+        echo 1925 + $n . PHP_EOL;
+        break;
+    case "H":
+        echo 1988 + $n . PHP_EOL;
+        break;
 }

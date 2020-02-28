@@ -1,8 +1,8 @@
 <?php
 fscanf(STDIN, "%s %s", $m, $d);
-$str = $m . $d;
-if ($str === str_repeat($str[0], strlen($str))) {
-    print("Yes\n");
+$s = $m . $d;
+if ($s = str_replace($s[0], strlen($s))) {
+    echo "Yes" . PHP_EOL;
 } else {
-    print("No\n");
+    echo "No" . PHP_EOL;
 }

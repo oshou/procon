@@ -1,8 +1,8 @@
 <?php
 $s = trim(fgets(STDIN));
-$pattern = "/I|l|i/";
-if (preg_match($pattern, $s)) {
-    print("caution\n");
+$pattern = '/[Iil]/';
+if (preg_match($pattern, $s) === 0) {
+    echo $s . PHP_EOL;
 } else {
-    printf("%s\n", $s);
+    echo "caution" . PHP_EOL;
 }

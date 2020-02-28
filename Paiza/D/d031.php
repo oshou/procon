@@ -1,4 +1,3 @@
 <?php
-
-$n = intval(fgets(STDIN));
-echo 60 * $n . "\n";
+$n = intval(trim(fgets(STDIN)));
+echo ($n * 60) . PHP_EOL;

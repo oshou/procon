@@ -1,8 +1,8 @@
 <?php
-$a = trim(fgets(STDIN));
-$b = trim(fgets(STDIN));
-if ($a[-1] === $b[0] && $b[-1] !== "n") {
-    print("OK\n");
+$s1 = trim(fgets(STDIN));
+$s2 = trim(fgets(STDIN));
+if ($s1[-1] === $s2[0] && $s2[-1] !== "n") {
+    echo "OK" . PHP_EOL;
 } else {
-    print("NG\n");
+    echo "NG" . PHP_EOL;
 }

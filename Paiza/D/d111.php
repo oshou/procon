@@ -1,5 +1,3 @@
 <?php
-
-$n = intval(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 $s = trim(fgets(STDIN));
-printf("%s\n", substr($s, 0, $n));

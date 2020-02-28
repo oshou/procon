@@ -1,12 +1,11 @@
 <?php
-$n = intval(fgets(STDIN));
+$n = intval(trim(fgets(STDIN)));
 $arr = explode(" ", trim(fgets(STDIN)));
-$gCount = count(array_keys($arr, "G"));
-$pCount = count(array_keys($arr, "P"));
-if ($gCount == $pCount) {
-    print("Draw\n");
-} elseif ($gCount > $pCount) {
-    print("P\n");
+$counts = array_count_values($arr);
+if ($counts["G"] === $counts["P"]) {
+    echo "Draw" . PHP_EOL;
+} else if ($counts["G"] > $counts["P"]) {
+    echo "P" . PHP_EOL;
 } else {
-    print("G\n");
+    echo "G" . PHP_EOL;
 }

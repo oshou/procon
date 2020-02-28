@@ -1,8 +1,7 @@
 <?php
-
 $arr = [];
-for ($i = 0; $i < 5; $i++) {
-    $arr[] = intval(fgets(STDIN));
+for ($i = 1; $i <= 5; $i++) {
+    $arr[] = intval(trim(fgets(STDIN)));
 }
-echo max($arr) . "\n";
-echo min($arr) . "\n";
+echo max($arr) . PHP_EOL;
+echo min($arr) . PHP_EOL;

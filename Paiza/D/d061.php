@@ -1,8 +1,7 @@
 <?php
-
-$n = intval(fgets(STDIN));
-if ($n === 0) {
-    print("1¥n");
+$c = intval(trim(fgets(STDIN)));
+if ($c === 0) {
+    printf("%d\n", 1);
 } else {
-    printf("%d\n", $n * 3);
+    printf("%d\n", $c * 3);
 }

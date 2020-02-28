@@ -1,8 +1,7 @@
 <?php
-
-$n = intval(fgets(STDIN));
-$arr = [];
+$n = intval(trim(fgets(STDIN)));
+$str = "";
 for ($i = 0; $i < $n; $i++) {
-    $arr[] = trim(fgets(STDIN));
+    $str .= trim(fgets(STDIN));
 }
-printf("%s\n", implode("", $arr));
+echo $str . PHP_EOL;

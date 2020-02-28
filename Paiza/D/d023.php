@@ -1,5 +1,4 @@
 <?php
-
 $s = trim(fgets(STDIN));
 $cnt = 0;
 for ($i = 0; $i < strlen($s); $i++) {
@@ -7,4 +6,4 @@ for ($i = 0; $i < strlen($s); $i++) {
         $cnt++;
     }
 }
-echo $cnt . "\n";
+echo $cnt . PHP_EOL;
