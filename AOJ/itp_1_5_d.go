@@ -22,9 +22,20 @@ func readInt() int {
 func main() {
 	n := readInt()
 	for i := 1; i <= n; i++ {
-		if i%3 == 0 || i%10 == 3 {
-			fmt.Print(" ")
-			fmt.Print(i)
+		if i%3 == 0 {
+			fmt.Printf(" %v", i)
+			continue
+		}
+		n := i
+		for {
+			if n == 0 {
+				break
+			}
+			if n%10 == 3 {
+				fmt.Printf(" %v", i)
+				break
+			}
+			n /= 10
 		}
 	}
 	fmt.Println()

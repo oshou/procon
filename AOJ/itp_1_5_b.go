@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -12,6 +13,7 @@ var sc = bufio.NewScanner(os.Stdin)
 
 func init() {
 	sc.Split(bufio.ScanWords)
+	sc.Buffer([]byte{}, math.MaxInt64)
 }
 
 func readInt() int {
@@ -20,28 +22,18 @@ func readInt() int {
 	return r
 }
 
-type block struct {
-	h, w int
-}
-
 func main() {
 	var h, w int
-	var blocks []block
 	for {
 		h, w = readInt(), readInt()
 		if h == 0 && w == 0 {
-			break
+			os.Exit(0)
 		}
-		blocks = append(blocks, block{h: h, w: w})
-	}
-	for _, block := range blocks {
-		for i := 0; i < block.h; i++ {
-			if i == 0 || i == block.h-1 {
-				fmt.Println(strings.Repeat("#", block.w))
-			} else {
-				fmt.Printf("#%v#\n", strings.Repeat(".", block.w-2))
-			}
+		fmt.Println(strings.Repeat("#", w))
+		for i := 0; i < h-2; i++ {
+			fmt.Printf("#%v#\n", strings.Repeat(".", w-2))
 		}
+		fmt.Println(strings.Repeat("#", w))
 		fmt.Println("")
 	}
 }
