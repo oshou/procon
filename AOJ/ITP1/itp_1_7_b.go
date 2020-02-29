@@ -21,25 +21,23 @@ func readInt() int {
 	return r
 }
 
-func digits(n int) int {
-	sum := 0
-	for n != 0 {
-		sum += n % 10
-		n = n / 10
-	}
-	return sum
-}
-
 func main() {
-	var ans []int
+	var n, x int
+	var k, cnt int
 	for {
-		s := readInt()
-		if s == 0 {
-			break
+		k, cnt = 0, 0
+		n, x = readInt(), readInt()
+		if n == 0 && k == 0 {
+			os.Exit(0)
 		}
-		ans = append(ans, digits(s))
-	}
-	for _, v := range ans {
-		fmt.Println(v)
+		for i := 1; i <= n; i++ {
+			for j := i + 1; j <= n; j++ {
+				k = x - (i + j)
+				if j+1 <= k && k <= n && i+j+k == x {
+					cnt++
+				}
+			}
+		}
+		fmt.Println(cnt)
 	}
 }
