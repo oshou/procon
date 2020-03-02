@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-  int n;
-  cin >> n;
-  cout << n * n * n << endl;
+  for (int i = 1; i <= 1000; i++) printf("Hello World\n");
 }

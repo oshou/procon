@@ -3,5 +3,5 @@ using namespace std;
 int main() {
   int n;
   cin >> n;
-  cout << n * n * n << endl;
+  cout << (n + 1) / 2 << endl;
 }

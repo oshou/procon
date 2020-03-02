@@ -1,9 +1,7 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-int main()
-{
+int main() {
   int a, b;
-  cin >> a;
+  cin >> a >> b;
+  cout << a * b << " " << 2 * (a + b) << endl;
 }
