@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"strings"
 )
@@ -12,7 +11,6 @@ var sc = bufio.NewScanner(os.Stdin)
 
 func init() {
 	sc.Split(bufio.ScanWords)
-	sc.Buffer([]byte{}, math.MaxInt64)
 }
 
 func readString() string {
@@ -21,16 +19,16 @@ func readString() string {
 }
 
 func main() {
-	k := readString()
-	var s string
-	var cnt int
+	s := readString()
+	cnt := 0
 	for {
-		s = readString()
-		if s == "END_OF_TEXT" {
+		word := readString()
+		if word == "END_OF_TEXT" {
 			break
 		}
 		s = strings.ToLower(s)
-		if k == s {
+		word = strings.ToLower(word)
+		if word == s {
 			cnt++
 		}
 	}

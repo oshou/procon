@@ -1,41 +1,22 @@
 package main
 
-import "bufio"
-
-var sc = bufio.NewScanner(os.Stdin)
-
-func init() {
-	sc.Split(bufio.ScanWords)
-	sc.Buffer([]byte{}, math.MaxInt64)
-}
-
-func readString() string {
-	sc.Scan()
-	return sc.Text()
-}
-
-func readInt() int {
-	sc.Scan()
-	r, _ := strconv.Atoi(sc.Text())
-	return r
-}
+import (
+	"fmt"
+)
 
 func main() {
-	a := readString()
-	m := readInt()
-	h := make([]int, m)
-	for i := 0; i < m; i++ {
-		h = append(h, readInt())
+	var s string
+	var m, h int
+	for {
+		fmt.Scan(&s)
+		if s == "-" {
+			break
+		}
+		fmt.Scan(&m)
+		for i := 0; i < m; i++ {
+			fmt.Scan(&h)
+			s = s[h:] + s[:h]
+		}
+		fmt.Println(s)
 	}
 }
-aabc
-caab
-aabc
-bcaa
-caab
-
-
-
-xyzvw
-vwxyz
-zvwxy

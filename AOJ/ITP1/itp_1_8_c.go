@@ -62,6 +62,6 @@ func main() {
 	}
 	sort.Strings(keys)
 	for _, key := range keys {
-		fmt.Printf("%v:%v\n", key, m[key])
+		fmt.Printf("%v : %v\n", key, m[key])
 	}
 }

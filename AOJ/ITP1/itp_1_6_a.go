@@ -28,16 +28,15 @@ func readInt() int {
 
 func main() {
 	n := readInt()
-	var arr []int
+	a := make([]int, n)
 	for i := 0; i < n; i++ {
-		arr = append(arr, readInt())
+		a[i] = readInt()
 	}
-	for i := len(arr) - 1; i >= 0; i-- {
-		if i == len(arr)-1 {
-			fmt.Printf("%v", arr[i])
-		} else {
-			fmt.Printf(" %v", arr[i])
+	for i := n - 1; i >= 0; i-- {
+		if i != n-1 {
+			fmt.Print(" ")
 		}
+		fmt.Printf("%d", a[i])
 	}
-	fmt.Println("")
+	fmt.Println()
 }

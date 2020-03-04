@@ -9,23 +9,18 @@ import (
 
 var sc = bufio.NewScanner(os.Stdin)
 
-func readString() string {
-	sc.Scan()
-	return sc.Text()
-}
-
 func main() {
-	s := readString()
-	var ans string = ""
-	for _, c := range s {
-		switch {
-		case 'a' <= c && c <= 'z':
-			ans += strings.ToLower(string(c))
-		case 'A' <= c && c <= 'Z':
-			ans += strings.ToLower(string(c))
-		default:
-			ans += string(c)
+	var s string
+	sc.Scan()
+	s = sc.Text()
+	for i := 0; i < len(s); i++ {
+		s_upper := strings.ToUpper(string(s[i]))
+		s_lower := strings.ToLower(string(s[i]))
+		if string(s[i]) == s_upper {
+			fmt.Print(s_lower)
+		} else {
+			fmt.Print(s_upper)
 		}
 	}
-	fmt.Println(ans)
+	fmt.Println()
 }

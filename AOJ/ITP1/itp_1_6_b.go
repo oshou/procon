@@ -28,41 +28,41 @@ func readInt() int {
 
 func main() {
 	n := readInt()
-	s := make([]bool, 13)
-	h := make([]bool, 13)
-	c := make([]bool, 13)
-	d := make([]bool, 13)
+	s := make([]bool, 14)
+	h := make([]bool, 14)
+	c := make([]bool, 14)
+	d := make([]bool, 14)
 	for i := 0; i < n; i++ {
 		symbol, num := readString(), readInt()
 		switch symbol {
 		case "S":
-			s[num-1] = true
+			s[num] = true
 		case "H":
-			h[num-1] = true
+			h[num] = true
 		case "C":
-			c[num-1] = true
+			c[num] = true
 		case "D":
-			d[num-1] = true
+			d[num] = true
 		}
 	}
-	for i := 0; i < 13; i++ {
-		if s[i] == false {
-			fmt.Println("S", i+1)
+	for i := 1; i <= 13; i++ {
+		if !s[i] {
+			fmt.Printf("S %d\n", i)
 		}
 	}
-	for i := 0; i < 13; i++ {
-		if h[i] == false {
-			fmt.Println("H", i+1)
+	for i := 1; i <= 13; i++ {
+		if !h[i] {
+			fmt.Printf("H %d\n", i)
 		}
 	}
-	for i := 0; i < 13; i++ {
-		if c[i] == false {
-			fmt.Println("C", i+1)
+	for i := 1; i <= 13; i++ {
+		if !c[i] {
+			fmt.Printf("C %d\n", i)
 		}
 	}
-	for i := 0; i < 13; i++ {
-		if d[i] == false {
-			fmt.Println("D", i+1)
+	for i := 1; i <= 13; i++ {
+		if !d[i] {
+			fmt.Printf("D %d\n", i)
 		}
 	}
 }

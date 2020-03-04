@@ -27,7 +27,7 @@ func main() {
 	for {
 		h, w = readInt(), readInt()
 		if h == 0 && w == 0 {
-			os.Exit(0)
+			return
 		}
 		for i := 0; i < h; i++ {
 			fmt.Println(strings.Repeat("#", w))
