@@ -6,9 +6,13 @@ import (
 )
 
 func main() {
-	var a, b, C float64
+	var a, b, c, C, L, S float64
 	fmt.Scanf("%f %f %f", &a, &b, &C)
-	h := math.Sin(math.Pi * C / 180)
-	S := a * h / 2
-	fmt.Printf("%f\n", h)
+	h := math.Sin(math.Pi*C/180) * b
+	S = a * h / 2
+	c = math.Tan(math.Pi*C/180) * a
+	L = a + b + c
+	fmt.Println(S)
+	fmt.Println(L)
+	fmt.Println(h)
 }

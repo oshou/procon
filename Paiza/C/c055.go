@@ -3,16 +3,20 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"strconv"
+	"strings"
 )
 
 var sc = bufio.NewScanner(os.Stdin)
 
 func init() {
 	sc.Split(bufio.ScanWords)
-	sc.Buffer([]byte{}, math.MaxInt64)
+}
+
+func readString() string {
+	sc.Scan()
+	return sc.Text()
 }
 
 func readInt() int {
@@ -23,17 +27,17 @@ func readInt() int {
 
 func main() {
 	n := readInt()
-	var arr []int
+	g := readString()
+	var s string
+	var isNone bool = true
 	for i := 0; i < n; i++ {
-		arr = append(arr, readInt())
-	}
-	for i := 0; i < n; i++ {
-		if arr[i]%2 == 0 {
-			if arr[i]%3 != 0 && arr[i]%5 != 0 {
-				fmt.Println("DENIED")
-				os.Exit(0)
-			}
+		s = readString()
+		if strings.Contains(s, g) {
+			isNone = false
+			fmt.Println(s)
 		}
 	}
-	fmt.Println("APPROVED")
+	if isNone {
+		fmt.Println("None")
+	}
 }
