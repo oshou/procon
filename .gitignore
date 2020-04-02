@@ -8,3 +8,6 @@ Gemfile.lock
 
 # for Go
 go.sum
+
+# output
+*.out
