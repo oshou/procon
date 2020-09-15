@@ -9,7 +9,7 @@ class Solution:
         num = abs(x)
         while num != 0:
             reversed = reversed*10+num % 10
-            num /= 10
+            num //= 10
 
         if is_negative:
             return (-1)*reversed

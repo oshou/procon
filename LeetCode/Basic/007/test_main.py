@@ -8,6 +8,7 @@ class TestSolution:
             [123, 321],
             [-123, -321],
             [120, 21],
+            [1534236469, 0]
         ]
         for arg, expected in cases:
             assert solution.reverse(arg) == expected
