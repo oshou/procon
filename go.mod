@@ -4,7 +4,7 @@ go 1.13
 
 require (
 	github.com/gin-contrib/cors v1.3.1 // indirect
-	github.com/gin-gonic/gin v1.6.2 // indirect
+	github.com/gin-gonic/gin v1.7.0 // indirect
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/golang/protobuf v1.3.5 // indirect
 	github.com/k0kubun/colorstring v0.0.0-20150214042306-9440f1994b88 // indirect
